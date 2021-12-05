@@ -1,0 +1,117 @@
+:root {
+    --preta:#141414;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* base elements */
+
+@font-face {
+    font-family:'starfont';
+    src: url('font/Star\ Trek\ Enterprise\ Future.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background: var(--preta);
+    font-family: 'Arial', Times, serif; 
+    color: white;   
+}
+
+header .netflix-wrapper {
+    position: absolute;
+    z-index: 100;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:start;
+}
+
+header .logo {
+    margin:15px ;
+    font-size: px;    
+}
+
+header nav a {
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color:#ffff;   
+}
+
+/* principal movie */
+
+.principal-movie {
+    font-size:16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('img/capa.jpg');
+    height:650px;
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.principal-movie .description {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-family: 'Helvetica Neue' Helvetica, Arial, sans-serif;
+}
+
+.principal-movie .title{
+    margin-top: 15%;
+    font-size: 100px;
+    font-family:'starfont';
+}
+
+.button {
+    background-color: rgba(0,0,0,.50);
+    border:none;
+    color: white;
+
+    padding:15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.button:hover {
+    background-color:white;
+    color:black;
+}
+
+.button i {
+    margin-right: 8px;
+}
+
+.netflix-wrapper {
+    margin-left: 25px;
+}
+
+.principal-movie .netflix-wrapper {
+    width: 35%;
+}
+
+.movie-box {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.row-movie {
+    margin-top: 5px;
+}
